@@ -60,7 +60,8 @@ typedef struct			s_cw
 	ssize_t				cycles_to_die;		// game param
 	ssize_t				cycles_after_check;	// number of cycles that was passed after last rules check
 	size_t				checks_num;			// game param
-
+	bool				isdump;
+	size_t				dump_cycle;
 }						t_cw;
 
 void					abort(char *s);
